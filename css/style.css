@@ -109,11 +109,25 @@ body {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center
 }
 
 .nav-contacts .link:focus,
 .nav-contacts .link:hover {
     color: var(--accent-color)
+}
+
+.link-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.link-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 
@@ -135,6 +149,11 @@ body {
 
 .hero {
     background-color: #2F303A;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/firstimg.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -233,7 +252,7 @@ body {
     display: flex;
 }
 
-.img-item:nth-child(-n + 2) {
+.img-item:nth-child(-n+2) {
     margin-right: 30px;
 }
 
