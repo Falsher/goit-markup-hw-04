@@ -122,12 +122,14 @@ body {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentColor
 }
 
 .link-phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+    fill: currentColor
 }
 
 
@@ -190,6 +192,22 @@ body {
 
 
 /*features*/
+
+.features-gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.vektor {
+    width: 70px;
+    height: 70px;
+}
 
 .features {
     padding-top: 94px;
@@ -259,6 +277,43 @@ body {
 
 /*team*/
 
+.social {
+    display: flex;
+    justify-content: space-around;
+    width: 206px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px
+}
+
+.social-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+}
+
+.social-link {
+    width: 20px;
+    height: 20px;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background: var(--accent-color);
+    fill: var(--first-color)
+}
+
+
+/*
+.social-link:hover,
+.social-link:focus {
+    fill: var(--first-color)
+}*/
+
 .ourteam {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -286,7 +341,6 @@ body {
 
 .command-link li {
     background: #fff;
-    padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -297,6 +351,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     text-align: center;
+    margin-bottom: 16px;
 }
 
 
