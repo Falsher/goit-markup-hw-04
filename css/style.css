@@ -307,13 +307,6 @@ body {
     fill: var(--first-color)
 }
 
-
-/*
-.social-link:hover,
-.social-link:focus {
-    fill: var(--first-color)
-}*/
-
 .ourteam {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -339,7 +332,7 @@ body {
     margin-bottom: 10px;
 }
 
-.command-link li {
+.command-link>li {
     background: #fff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -355,12 +348,90 @@ body {
 }
 
 
+/*client*/
+
+.first-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.client-item:hover,
+.client-item:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color)
+}
+
+
 /*footer*/
 
 .footer {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-two {
+    margin-left: 70px;
+}
+
+.footer-title {
+    color: var(--first-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+    width: 206px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-svg:nth-child(-n+3) {
+    margin-right: 10px;
+}
+
+.footer-svg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: var(--first-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-svg:hover,
+.footer-svg:focus {
+    background: var(--accent-color);
+    fill: var(--first-color)
 }
 
 .logo-footer {
@@ -468,6 +539,11 @@ address p {
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     padding: 20px 24px;
+}
+
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element a,
